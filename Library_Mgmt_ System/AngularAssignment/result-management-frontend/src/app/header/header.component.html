@@ -1,0 +1,10 @@
+<header >
+    <nav class="navbar navbar-expand-md  navbar-light justify-content-between" style="background-color: #D6E7D4;"> 
+        <h3 class="navbar-nav mx-auto">
+            <b style="padding-left: 10px;"> Result Management System </b>
+        </h3>
+        <!-- <a routerLink="" class="btn btn-outline-primary" type="submit" *ngIf="isLogin">Logout</a> -->
+        <a routerLink="" class="btn btn-outline-primary" type="submit" (click)="logout()" *ngIf="loginService.loginStatus==1">Logout</a>
+    </nav>
+</header>
+

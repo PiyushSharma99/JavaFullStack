@@ -1,0 +1,8 @@
+Steps to automate build in Jenkins Pipeline
+Jenkins is served localhost by default. 
+And GITLAB webhook integration doesn’t recognize any local request. To do so we need admin admin access of GITLAB which is not given to us. So NGROK is been used to forward the Jenkins on public IP.  
+1. Run Jenkins from war file if its not already open.
+2. After checking Jenkins on 8080 port.
+3. Open Ngrok from downloaded folder and then we will forward Jenkins to public IP using “ngrok http 8080” in Ngrok.
+4. Copy the url from NGROK and change it in GITLAB > settings > Integrations > Web hook > change the url and test it there . Then see if build is starting on Jenkins or not.
+5. Then do regular push in GITLAB and Build will be success or failure depending on the change.

@@ -1,0 +1,20 @@
+Payload for create & Update.
+
+Author Payload
+
+{
+    "authorId" : "1",
+    "authorName" : "ABCDE"
+}
+
+Payload for book
+
+{
+    "bookCode" : "1",
+    "bookTitle" : "ABCDE",
+    "addedOn" : "1",
+    "author" : {
+        "authorId" : "1"
+        
+    }
+}
